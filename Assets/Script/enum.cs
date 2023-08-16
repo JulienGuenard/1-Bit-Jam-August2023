@@ -1,0 +1,1 @@
+public enum SceneName { Title, Introduction, Interlude, Dialog, Platformer };
