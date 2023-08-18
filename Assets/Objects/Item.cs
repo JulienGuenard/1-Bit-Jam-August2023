@@ -10,4 +10,5 @@ using UnityEngine;
         [TextArea] public string itemDescription;
         public int alignmentModifier;
         public Sprite sprite;
+        public bool isIngredient;
     }

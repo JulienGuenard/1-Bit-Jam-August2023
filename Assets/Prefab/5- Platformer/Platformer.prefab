@@ -1223,7 +1223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3.5
   jumpForce: 800
-  fallForce: 0.2
+  fallForce: 0.12
 --- !u!61 &8588780430052217776
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3119,7 +3119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6279130894878728061
 Transform:
   m_ObjectHideFlags: 0
@@ -3140,7 +3140,7 @@ Transform:
   - {fileID: 4231335081313516359}
   - {fileID: 1135421634797190799}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8529950201098690017
 GameObject:

@@ -25,7 +25,7 @@ public class SnakeBehaviour : MonoBehaviour
                 animator.SetBool("GoUp", true);
             }else
             {
-                Inventory.instance.LoseItem();
+                InventoryManager.instance.LoseItemLast();
                 Destroy(this.gameObject);
             }
             

@@ -16,3 +16,4 @@ MonoBehaviour:
   itemDescription: Touching this make you shine.
   alignmentModifier: 1
   sprite: {fileID: 21300000, guid: 3cbbd7159368bc8438207423e80f9c4d, type: 3}
+  isIngredient: 1

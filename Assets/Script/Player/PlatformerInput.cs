@@ -40,7 +40,7 @@ public class PlatformerInput : MonoBehaviour
 
         if (collision.tag == "Plant")
         {
-            Inventory.instance.GainItem(collision.GetComponent<PlantBehaviour>().item);
+            InventoryManager.instance.GainItem(collision.GetComponent<PlantBehaviour>().item);
             Destroy(collision.gameObject);
         }
 

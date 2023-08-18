@@ -31,5 +31,8 @@ public class SceneManager : MonoBehaviour
         if (scene == SceneName.Dialog)          foreach (GameObject obj in dialog)          obj.SetActive(true);
         if (scene == SceneName.Platformer)      foreach (GameObject obj in platformer)      obj.SetActive(true);
         if (scene == SceneName.Title)           foreach (GameObject obj in titleScreen)     obj.SetActive(true);
+
+        if (scene == SceneName.Dialog) foreach (GameObject obj in dialog)   InventoryManager.instance.inventoryAnimation.Show();
+        else                                                                InventoryManager.instance.inventoryAnimation.Hide();
     }
 }
