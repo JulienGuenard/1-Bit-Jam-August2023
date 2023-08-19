@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753611bc747d7ba488a25602e50e10b1, type: 3}
+  m_Name: 3-SweetBrother
+  m_EditorClassIdentifier: 
+  characterName: SweetBrother
+  alignment: 0
+  spriteDark: {fileID: 21300000, guid: 7d9491d9991c8ed4cac2ed8ef458443f, type: 3}
+  textDark: I eat every candy possible in this bag granted by my brother, I'm still
+    hungry, give me too !
+  choiceListDark:
+  - text: Give him two items
+    outcome: 30
+  - text: Escape him
+    outcome: 31
+  spriteNormal: {fileID: 21300000, guid: f7db8391ba5a45e4aa717c776cf1cc35, type: 3}
+  textNormal: "My brother seek me for this bag I stole him, it contains a lot of
+    candy, wanna try ?\r"
+  choiceListNormal:
+  - text: Gain one item
+    outcome: 32
+  - text: Bring back bag to his owner
+    outcome: 33
+  spriteLight: {fileID: 21300000, guid: 32097d0c708744148977db9e513d270d, type: 3}
+  textLight: I'll bring back this bag of candy to my brother, he'll be happy again
+    that way.
+  choiceListLight:
+  - text: Congratulate him
+    outcome: 34
+  - text: Bring it yourself
+    outcome: 35

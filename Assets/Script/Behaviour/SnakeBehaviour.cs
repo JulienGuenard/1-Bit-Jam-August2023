@@ -26,6 +26,7 @@ public class SnakeBehaviour : MonoBehaviour
             }else
             {
                 InventoryManager.instance.LoseItemLast();
+                AudioManager.instance.PlaySound(0);
                 Destroy(this.gameObject);
             }
             

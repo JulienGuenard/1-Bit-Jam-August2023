@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753611bc747d7ba488a25602e50e10b1, type: 3}
+  m_Name: 5-Wizard
+  m_EditorClassIdentifier: 
+  characterName: Wizard
+  alignment: 0
+  spriteDark: {fileID: 21300000, guid: 1d72dbfd4b4350941bf933159b7ca60b, type: 3}
+  textDark: An old wizard, use his dark power and try to release a skeleton on you,
+    but he disapear in ashes two seconds after.
+  choiceListDark:
+  - text: Give him one item
+    outcome: 50
+  - text: Leave this mad man
+    outcome: 51
+  spriteNormal: {fileID: 21300000, guid: 16efaa96282d7d349a211ebff06342d8, type: 3}
+  textNormal: Hatinator, the great wizard, salute you and offer you the choice of
+    two labyrinths.
+  choiceListNormal:
+  - text: Maze of Hope
+    outcome: 52
+  - text: Maze of Faith
+    outcome: 53
+  spriteLight: {fileID: 21300000, guid: fc29da6870ef4174690a2326b6411135, type: 3}
+  textLight: An holy mantle come from the air at you, he materialize, its Hatinator
+    the great archmage. He offer you two choices.
+  choiceListLight:
+  - text: Full of one
+    outcome: 54
+  - text: None of all
+    outcome: 55

@@ -23,15 +23,13 @@ public class InventoryManager : MonoBehaviour
             if (i.item != null) itemCount++;
         }
     }
-    public void LoseItem(GameObject obj)
+    public void LoseItem(ItemBehaviour itemB)
     {
-        ItemBehaviour itemB = obj.GetComponent<ItemBehaviour>();
-
         itemB.item = null;
         slotList.Remove(itemB);
-        Transform origin = obj.transform.parent;
-        obj.transform.SetParent(transform);
-        obj.transform.SetParent(origin);
+        Transform origin = itemB.transform.parent;
+        itemB.transform.SetParent(transform);
+        itemB.transform.SetParent(origin);
         slotList.Add(itemB);
         itemCount--;
     }
@@ -45,7 +43,7 @@ public class InventoryManager : MonoBehaviour
     }
     public void GainItem(Item item)
     {
-        if (itemCount == 5) return;
+        if (itemCount == 10) return;
 
         slotList[itemCount].item = item;
         itemCount++;

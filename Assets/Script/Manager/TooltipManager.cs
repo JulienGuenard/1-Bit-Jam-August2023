@@ -3,12 +3,14 @@ using UnityEngine;
 
 public class TooltipManager : MonoBehaviour
 {
-    public GameObject   tooltip;
-    TextMeshProUGUI     tooltipText;
+    public GameObject   tooltipItem;
+    public GameObject   tooltipAction;
+    TextMeshProUGUI     tooltipItemText;
+    TextMeshProUGUI     tooltipActionText;
 
     public float xOffset;
 
-    Vector3 posOrigin;
+    Vector3 tooltipItemPosOrigin;
 
     static public TooltipManager instance;
 
@@ -16,27 +18,39 @@ public class TooltipManager : MonoBehaviour
     {
         if (instance == null) instance = this;
 
-        tooltipText = tooltip.GetComponent<TextMeshProUGUI>();
-        tooltipText.enabled = false;
+        tooltipItemText = tooltipItem.GetComponent<TextMeshProUGUI>();
+        tooltipItem.SetActive(false);
+        tooltipActionText = tooltipAction.GetComponentInChildren<TextMeshProUGUI>();
+        tooltipAction.SetActive(false);
 
-        posOrigin = tooltip.transform.localPosition;
+        tooltipItemPosOrigin = tooltipItem.transform.localPosition;
     }
 
-    public void ShowTooltipAtPos(string message, Transform trans)
+    public void ShowTooltipItemAtPos(string message, Transform trans)
     {
-        tooltip.transform.localPosition = new Vector3(trans.position.x + xOffset, posOrigin.y, 0);
-        ShowTooltip(message);
+        ShowTooltipItem(message);
     }
 
-    public void ShowTooltip(string message)
+    public void ShowTooltipItem(string message)
     {
-        tooltipText.text = message;
-        tooltipText.enabled = true;
+        tooltipItemText.text = message;
+        tooltipItem.SetActive(true);
     }
 
-    public void HideTooltip()
+    public void HideTooltipItem()
     {
-        tooltipText.text = " ";
-        tooltipText.enabled = false;
+        tooltipItemText.text = " ";
+        tooltipItem.SetActive(false);
+    }
+
+    public void ShowTooltipAction(string message)
+    {
+        tooltipActionText.text = message;
+        tooltipAction.SetActive(true);
+    }
+
+    public void HideTooltipAction()
+    {
+        tooltipAction.SetActive(false);
     }
 }

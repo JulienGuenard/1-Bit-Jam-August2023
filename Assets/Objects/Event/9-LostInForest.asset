@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa010bd8e3f83541b732de543ce0545, type: 3}
+  m_Name: 9-LostInForest
+  m_EditorClassIdentifier: 
+  eventName: OldMan
+  character: {fileID: 0}
+  eventDescription: So many trees, you can't see anything, it could be dangerous
+    to travel here.
+  sprite: {fileID: 21300000, guid: 164573ca3122b7440a7a2bd75b2d4fe0, type: 3}
+  choiceList:
+  - text: Travel forest
+    outcome: 90
+  - text: Lose one item
+    outcome: 91

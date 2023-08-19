@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa010bd8e3f83541b732de543ce0545, type: 3}
+  m_Name: 8-HerbFest
+  m_EditorClassIdentifier: 
+  eventName: Snake
+  character: {fileID: 0}
+  eventDescription: You see so many plants in this valley, its a great opportunity
+    for the alchimist you are.
+  sprite: {fileID: 21300000, guid: 107ae029c73ccda4c9ad2f4336b63372, type: 3}
+  choiceList:
+  - text: Come to the valley
+    outcome: 80
+  - text: Leave
+    outcome: 81

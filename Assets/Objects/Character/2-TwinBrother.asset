@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753611bc747d7ba488a25602e50e10b1, type: 3}
+  m_Name: 2-TwinBrother
+  m_EditorClassIdentifier: 
+  characterName: TwinBrother
+  alignment: 0
+  spriteDark: {fileID: 21300000, guid: 8cefd2bb4476e1c4dbb65dfcf9a1e222, type: 3}
+  textDark: A boy is vengeful against his twin brother, who stole all of his life.
+  choiceListDark:
+  - text: He craft you a dark bottle
+    outcome: 20
+  - text: Leave him
+    outcome: 21
+  spriteNormal: {fileID: 21300000, guid: fd3dc47af21da7e41906d9ad243ee623, type: 3}
+  textNormal: A boy who is chasing his twin brother, who stole a bag with something
+    really important from him.
+  choiceListNormal:
+  - text: He craft you a bottle
+    outcome: 22
+  - text: Leave him
+    outcome: 23
+  spriteLight: {fileID: 21300000, guid: 7f0fac1ddfb3cf3439df6d761e7df7d5, type: 3}
+  textLight: A boy is playing with his twin brother, who promise him a bag of candy
+    if he catch him.
+  choiceListLight:
+  - text: He craft you a light bottle
+    outcome: 24
+  - text: Leave him
+    outcome: 25

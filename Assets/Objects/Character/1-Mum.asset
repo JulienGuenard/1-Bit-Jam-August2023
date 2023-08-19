@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753611bc747d7ba488a25602e50e10b1, type: 3}
+  m_Name: 1-Mum
+  m_EditorClassIdentifier: 
+  characterName: Mum
+  alignment: 0
+  spriteDark: {fileID: 21300000, guid: b3c5c65a5d1b12c4994b19b6fb2962c1, type: 3}
+  textDark: Mother has throw away all his children, she look at you with truly yellow
+    evil eyes.
+  choiceListDark:
+  - text: She throw you too
+    outcome: 10
+  - text: Abandon two items
+    outcome: 11
+  spriteNormal: {fileID: 21300000, guid: df404b0a9f554d14da56e79077df0910, type: 3}
+  textNormal: Mother sad cause she had many children, whom she cursed one day, and
+    they turned into snakes.
+  choiceListNormal:
+  - text: Curse her too
+    outcome: 12
+  - text: Leave this place
+    outcome: 13
+  spriteLight: {fileID: 21300000, guid: e7036f2dd8005e344b217640f0249686, type: 3}
+  textLight: Mother happier cause she cured her children from her own curse.
+  choiceListLight:
+  - text: She give a light ingredient
+    outcome: 14
+  - text: Check by her house
+    outcome: 15

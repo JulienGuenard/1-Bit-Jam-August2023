@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ItemBehaviour : MonoBehaviour
 {
     public Item item;
+    public Sprite defaultSprite;
     Image image;
 
     void Awake()
@@ -23,10 +24,12 @@ public class ItemBehaviour : MonoBehaviour
     {
         if (item == null)
         {
-            image.sprite = null;
+            image.sprite = defaultSprite;
             image.color = Color.black;
+            image.raycastTarget = false;
             return;
         }
+        image.raycastTarget = true;
         image.color = Color.white;
         image.sprite = item.sprite;
     }

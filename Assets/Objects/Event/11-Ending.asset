@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa010bd8e3f83541b732de543ce0545, type: 3}
+  m_Name: 11-Ending
+  m_EditorClassIdentifier: 
+  eventName: Snake
+  character: {fileID: 0}
+  eventDescription: I am Lucent the King, and I accept your offering thanks to save
+    my lands.
+  sprite: {fileID: 21300000, guid: 35197f5d6e739a8418b17a34b9ef3d44, type: 3}
+  choiceList:
+  - text: Give him a potion
+    outcome: 110
+  - text: Leave him
+    outcome: 111

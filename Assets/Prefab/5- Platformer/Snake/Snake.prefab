@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7698795058714651549
 SpriteRenderer:
@@ -186,7 +186,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.23420614}
+  m_Offset: {x: -0.024032623, y: 0.14494208}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -197,7 +197,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 1.2426594}
+  m_Size: {x: 0.22114545, y: 0.8169386}
   m_EdgeRadius: 0
 --- !u!114 &2040653424574232425
 MonoBehaviour:
@@ -211,4 +211,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0cee05c341c58b429106a7674625f57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectCol: {fileID: 0}
+  detectCol: {fileID: 954613699530908470}

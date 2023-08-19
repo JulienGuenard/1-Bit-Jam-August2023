@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753611bc747d7ba488a25602e50e10b1, type: 3}
+  m_Name: 4-Bard
+  m_EditorClassIdentifier: 
+  characterName: Bard
+  alignment: 0
+  spriteDark: {fileID: 21300000, guid: df404b0a9f554d14da56e79077df0910, type: 3}
+  textDark: A bard only regain his voice his has lost before, then he start yelling
+    at you.
+  choiceListDark:
+  - text: Escape from him
+    outcome: 40
+  - text: Give one item to calm him
+    outcome: 41
+  spriteNormal: {fileID: 21300000, guid: df404b0a9f554d14da56e79077df0910, type: 3}
+  textNormal: A bard who lost his hearing and his voice, trying to hide in the forest
+    from fans requesting new music. He writes all of it in the dirt with a stick.
+  choiceListNormal:
+  - text: Help him
+    outcome: 42
+  - text: Insult him
+    outcome: 43
+  spriteLight: {fileID: 21300000, guid: df404b0a9f554d14da56e79077df0910, type: 3}
+  textLight: A wind touch you, its the bard's song that thanks you for the help you
+    granted him before.
+  choiceListLight:
+  - text: Bard give you two items
+    outcome: 44
+  - text: Bard give you one potion
+    outcome: 45

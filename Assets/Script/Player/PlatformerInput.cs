@@ -12,9 +12,12 @@ public class PlatformerInput : MonoBehaviour
     Rigidbody2D rigid;
     bool hasJumped = false;
 
+    Animator animator;
+
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -24,6 +27,8 @@ public class PlatformerInput : MonoBehaviour
         if (!hasJumped && Input.GetKeyDown(KeyCode.Mouse0))
         {
             hasJumped = true;
+            AudioManager.instance.PlaySound(1);
+            animator.SetBool("Jump", true);
             rigid.AddForce(transform.up * jumpForce);
         }
 
@@ -46,8 +51,8 @@ public class PlatformerInput : MonoBehaviour
 
         if (collision.tag == "Exit")
         {
-            SceneManager.instance.NewScene(SceneName.Dialog);
-            PlatformerManager.instance.GenerateNewPlatformer();
+            SceneManager.instance.NewScene(SceneName.Interlude);
+            PlatformerManager.instance.GeneratePlatformer();
         }
     }
 
@@ -55,6 +60,7 @@ public class PlatformerInput : MonoBehaviour
     {
         if (collision.tag == "Ground")
         {
+            animator.SetBool("Jump", false);
             hasJumped = false;
         }
     }

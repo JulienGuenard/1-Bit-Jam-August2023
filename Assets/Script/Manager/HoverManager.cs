@@ -15,24 +15,21 @@ public class HoverManager : MonoBehaviour
     {
         if (instance == null) instance = this;
     }
-    public void HoverItem(GameObject obj)
+    public void HoverItem(ItemBehaviour itemB)
     {
         if (!canHover) return;
+        if (itemB.item == null) return;
 
-        ItemBehaviour itemBehaviour = obj.GetComponent<ItemBehaviour>();
+        Item item = itemB.item;
 
-        if (itemBehaviour.item == null) return;
+        string message = item.itemName + "<br>" + item.itemDescription;
+        Transform trans = itemB.transform;
 
-        Item item = itemBehaviour.item;
-
-        string message = "<size=38>" + item.itemName + "</size><br><size=28>" + item.itemDescription + "</size>";
-        Transform trans = obj.transform;
-
-        TooltipManager.instance.ShowTooltipAtPos(message, trans);
+        TooltipManager.instance.ShowTooltipItemAtPos(message, trans);
     }
     public void UnhoverItem()
     {
         if (!canHover) return;
-        TooltipManager.instance.HideTooltip();
+        TooltipManager.instance.HideTooltipItem();
     }
 }

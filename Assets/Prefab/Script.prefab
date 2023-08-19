@@ -15,6 +15,9 @@ GameObject:
   - component: {fileID: 7080542205079052777}
   - component: {fileID: 6401143618987611808}
   - component: {fileID: 6076310999381560406}
+  - component: {fileID: 7713020746256485617}
+  - component: {fileID: 4142621520175544304}
+  - component: {fileID: 5692471630184551523}
   m_Layer: 0
   m_Name: Script
   m_TagString: Untagged
@@ -92,7 +95,7 @@ MonoBehaviour:
   - {fileID: 0}
   inventoryAnimation: {fileID: 0}
   isMixing: 0
-  itemList: []
+  itemCount: 0
 --- !u!114 &7080542205079052777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,7 +108,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 744b2c855aa0b7b458eb489981acb434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tooltip: {fileID: 0}
+  tooltipItem: {fileID: 0}
+  tooltipAction: {fileID: 0}
+  xOffset: 100
 --- !u!114 &6401143618987611808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,6 +135,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa337c159b54d014f9c94ecd23c4c6ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tooltipOffsetX: 350
-  tooltipOffsetY: -350
+  tooltipOffsetX: 0
+  tooltipOffsetY: 0
   canHover: 1
+--- !u!114 &7713020746256485617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8132810554126172389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5274d1e2d9b94fd4881f60d27d9d4e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4142621520175544304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8132810554126172389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac070cec38fd7845a93fa8e2dec0877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMixing: 0
+  potionList:
+  - {fileID: 11400000, guid: 0d3ca827d1d28e04c86945c49dd5e25e, type: 2}
+  - {fileID: 11400000, guid: 056b0f0dc40003040b3c4dd633703402, type: 2}
+  - {fileID: 11400000, guid: c820f75e11b413644beee68e3cd67b77, type: 2}
+--- !u!114 &5692471630184551523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8132810554126172389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c10ccc122eeff42b4821f844eecd81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDrinking: 0
